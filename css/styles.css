@@ -59,7 +59,6 @@ body {
 
 
 
-
 /* form */
 .form h1{
     text-align: center;
@@ -108,4 +107,35 @@ body {
     border-radius: 8px;
     cursor: pointer;
     width: 100%;
+}
+
+.form input:focus {
+    border: 2px solid blue;
+    outline: none; /* bỏ viền mặc định của trình duyệt */
+}
+
+.form input:invalid {
+    border: 2px solid red;
+    outline: none;
+}
+
+.form-group:nth-of-type(-n+5) label::after {
+    content: "*";
+    color: red;
+    margin-left: 5px;
+}
+
+.btn:hover {
+    background-color: orange;
+    color: black;
+    transition: all 0.5s ease;
+}
+
+.btn:active {
+    background-color: red;
+    color: black;
+}
+
+.form:focus-within {
+    box-shadow: 0 0 50px rgba(202, 220, 40, 0.5);
 }
