@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.5;
+    background-color: #ccc;
+}
+
+/* Menu */
+.menu {
+    padding: 0 40px;
+    background-color: rgb(70, 70, 231);
+    font-size: 0px;
+    font-weight: 600;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 25px;
+    color: white;
+    font-size: 14px;
+}
+
+.menu li a:hover {
+    background-color: white;
+    color: black;
+    transition: all 0.5s ease;
+}
+
+.menu li a:active {
+    background-color: orange;
+    color: black;
+}
+
+.menu .submenu{
+    display: inline-block;
+}
+
+.menu li {
+    border-left: #ccc 2px solid;
+}
+
+.menu li:last-child {
+    border-right: #ccc 2px solid;
+}
+
+.menu li a::before {
+    content: "\25B6"; /* dấu chấm • */
+    margin-right: 8px;
+    color: red;
+}
+
+
+
+
+/* form */
+.form h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+.form{
+    max-width: 300px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 15px;
+    border-radius: 20px;
+}
+.form-group{
+    margin-bottom: 10px;
+}
+.form-label{
+    display: block;
+}
+
+.form-var{
+    margin: 5px 0px;
+    padding: 3px;
+    border-radius:8px;
+    border: 2px solid #ccc;
+    width: 100%;
+}
+
+.colum label{
+    display: block;
+}
+
+.avatar-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: rgb(70, 70, 231);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+}
