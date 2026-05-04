@@ -232,9 +232,9 @@ body {
 }
 
 .plan_benefit li::before{
-    content: "\2713"; /* dấu tích ✓ */
+    content: "\2713"; 
     color: green;
-    margin-right: 8px;
+    margin-right: 10px;
 }
 
 
