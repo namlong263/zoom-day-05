@@ -139,3 +139,102 @@ body {
 .form:focus-within {
     box-shadow: 0 0 50px rgba(202, 220, 40, 0.5);
 }
+
+/* pricing-tabble */
+
+ .sub_container{
+    margin: auto;
+    width: 1090px;
+    height: 100vh;
+    padding: 0 10px;
+    padding-top: 150px;
+    font-size: 0px;
+    color: #545454
+}
+
+.sub_plan{
+    display: inline-block;
+    width: 350px;
+    height: 600px;
+    background-color: #f7f7f7;
+    margin-right: 10px;
+    border-radius: 5px;
+    vertical-align: top;
+    padding: 20px;
+    font-size: 16px;
+}
+
+.sub_plan:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.sub_plan:nth-child(2){
+    box-shadow: 0 0 20px rgba(197, 217, 18, 0.901);
+}
+
+
+.plan_type{
+    text-align: left;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 10px 10px;
+}
+
+.plan_description{
+    padding: 0px 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.plan_price{
+    font-size: 30px;
+    font-weight: 600;
+    color: black;
+    padding: 10px 10px;
+}
+
+.price_description{
+    font-size: 14px;
+    color: #555;
+    padding: 0px 10px;
+}
+
+.plan_btn{
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 100%;
+    height: 35px;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #2ba24d;
+    border: 1px solid #367348;
+    color: white;
+}
+
+.sub_plan:last-child{
+    margin-right: 0px;
+}
+
+.sub_plan:first-child .plan_btn{
+    background-color: #ccc;
+    border: 1px solid #999;
+    color: #555;
+    cursor: not-allowed;
+}
+
+.plan_benefit{
+    padding: 15px 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.plan_benefit li::before{
+    content: "\2713"; /* dấu tích ✓ */
+    color: green;
+    margin-right: 8px;
+}
+
+
