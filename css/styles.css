@@ -324,7 +324,7 @@ h2:not(h1){
     background: #fff;
 }
 
-li:nth-of-type(odd) {
+.blog-post li:nth-of-type(odd) {
     background: #da8989a8;
 }
 
